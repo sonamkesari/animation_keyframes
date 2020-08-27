@@ -1,0 +1,41 @@
+.box{
+	background: green;
+	width: 250px;
+	position: relative;
+	height: 250px;
+	animation: move2;	
+	animation-duration: 18s;
+	animation-iteration-count: 3;
+}
+
+@keyframes move{
+	from{
+		width: 200px;
+		background: orange;
+
+	}
+	to{
+		width: 1400px;
+		background-color: red;
+	}
+
+}
+
+@keyframes move2{
+	0%{
+			top:0px;
+			left: 0px;
+	}
+	25%{
+			top:250px;
+			left: 0px;
+	}
+	75%{
+			top:250px;
+			left: 250px;
+	}
+	100%{
+			top:0px;
+			left:250px;
+	}
+}
